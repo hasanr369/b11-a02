@@ -22,9 +22,19 @@
     font-variation-settings:
     "wdth" 100;
 }
+.margin-zero-auto{
+    margin: 0 auto;
+}
+body{
+    max-width: auto;
+}
+/* shared styles */
 
 .hide{
     display: none;
+}
+.max-width{
+    max-width: 1160px;
 }
 .flex{
     display: flex;
@@ -41,8 +51,10 @@ section{
     margin-bottom: 5rem;
 }
 main{
-    background-image: url(../assets/bg.png);
+    background-image: url(../images/bg.png);
 }
+
+/* nav styles */
 
 .marquee{
     font-size: 1.5rem;
@@ -92,6 +104,9 @@ nav a{
     font-size: 1.25rem;
     font-weight: 600;
 }
+
+
+/* banner styles */
 .banner{
     justify-content: center;
     align-items: center;
@@ -117,6 +132,292 @@ nav a{
     font-weight: 600;
 }
 
+/* curriculum styles */
+
+.curriculum{
+    text-align: center;
+}
+.curriculum-card-container{
+    gap: 1.75rem;
+}
+.curriculum-title{
+    color: rgb(32, 32, 32);
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+.curriculum-img{
+    margin-bottom: 2rem;
+}
+.curriculum-description{
+    color: rgb(128, 128, 128);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 2rem auto;
+}
+
+.curriculum-card{
+    padding: 3.5rem 2.5rem;
+    border-radius: 1rem;
+    flex: 1;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+.curriculum-card-1{
+    background: linear-gradient(to bottom, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    border: 0.94px solid rgb(222, 245, 255);
+}
+.curriculum-card-2{
+    background: linear-gradient(to bottom, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    border: 0.94px solid rgb(255, 244, 220);
+}
+.curriculum-card-3{
+    background: linear-gradient(to bottom, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    border: 0.94px solid rgb(242, 232, 255);
+}
+.curriculum a{
+    text-decoration: none;
+}
+.read-more-1{
+    color: rgb(100, 200, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+}
+.read-more-2{
+    color: rgb(240, 170, 0);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+}
+.read-more-3{
+    color: rgb(135, 0, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+}
+.arrow-btn-container{
+    margin-top: 5rem;
+}
+.arrow-btn{
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+    border: none;
+    background-color: orange;
+    margin-right: .62rem;
+}
+.arrow-btn:hover{
+    background-color: white;
+    color: orange;
+}
+
+/* stories styles */
+.stories{
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+.stories img{
+    border-radius: 1rem 1rem 0 0;
+}
+.stories-container{
+    gap: 1.125rem;
+}
+.our-stories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+.stories-container{
+    border-radius: 16px;
+    margin-bottom: 5rem;
+}
+.stories-card-large, .stories-card{
+    border-radius: 16px;
+    background-color: white;
+    position: relative;
+}
+.stories-card-large-details{
+    padding: 2.9rem 4.313rem 2.188rem 2.406rem;
+}
+.stories-title-large{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.stories-title{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.75rem 2.375rem;
+}
+.stories-btn-large{
+    position: absolute;
+    left: 2.4rem;
+    top: 19.5rem;
+    right: 20rem;
+    bottom: 18rem;
+    border-radius: 3rem;
+    background: rgb(60, 216, 232);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;   
+}
+.stories-btn-container{
+    position: absolute;
+    left: 2.5rem;
+    top: 10rem;
+    /* right: 4.875rem;
+    bottom: 7.2rem;   */
+}
+.stories-btn{
+    border: none;
+    color: white;
+    background: rgb(149, 178, 38);
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 1rem;  
+    padding: 0.625rem 1.25rem;     
+}
+.stories-btn-black-container{
+    text-align: center;
+   padding-bottom: 3.5rem;
+}
+.stories-btn-black{
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    padding: 0.625rem 3.75rem;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.blue{
+    background-color: rgba(93, 88, 240, 1);
+}
+
+/* footer styles */
+
+footer{
+    background-color: rgb(1, 172, 253);;
+    color: white;
+    padding: 7.6rem 14.25rem 10.875rem 8.75rem;
+    gap: 9.5rem;
+    justify-content: center;
+}
+.footer-title{
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+    
+}
+.footer-description{
+    max-width: 400px;
+    
+}
+.footer-title-container{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+/* .footer-logo{
+    background-color: white;
+    padding: 0.3rem 0.2rem;
+    border-radius: 8px;
+} */
+.footer-paragraph{
+    font-size: 1.25rem;
+    line-height: 25px;
+}
+.about-list, .social-list{
+    list-style: none;
+}
+.about-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+    display: block;
+    margin-bottom: 1.3rem;
+}
+.about-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 0 2rem 0;
+}
+.social-title{
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0;
+}
+footer ul {
+    margin: 0;
+}
+footer ul li {
+    margin-bottom: 1.25rem;
+    margin-left: 0;
+}
+.social-icon{
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.5rem;
+}
 
 
+/* responsive  styles*/
 
+@media screen and (max-width: 576px) {
+    
+    .banner, .curriculum, .stories{
+        padding: 0 1rem;
+    }
+    header{
+        text-align: center;
+    }
+    
+    .nav-list, .name, .nav-btn, .arrow-btn-container, .stories-card-large{
+        display: none;
+    } 
+    .icon{
+        display: block;
+    }
+    .navigation{
+        justify-content: space-between;
+        border: 1px solid orange;
+        padding: .5rem;
+
+    }
+    .banner, .curriculum-card-container{
+        flex-direction: column-reverse;
+    }
+    .banner-img, .stories-img{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        padding: 4.5rem 0.75rem 4.5rem 1.25rem;
+        gap: 2rem;
+       justify-content: flex-start;
+    }
+    .our-stories{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stories-container{
+    margin-bottom: 2rem;
+    }
+    .stories-btn-container{
+        position: absolute;
+        left: 1rem;
+        top: 6rem;
+    }
+    .stories-btn{
+        font-size: 0.7rem;
+    }
+
+}
